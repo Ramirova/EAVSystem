@@ -1,9 +1,9 @@
 import Location
 
 
-class Building(Location):
+class Building:
 
     def __init__(self, longitude, latitude, street, number):
-        Location.__init__(self, longitude, latitude)
+        self.location = Location(longitude, latitude)
         self.street = street
         self.number = number

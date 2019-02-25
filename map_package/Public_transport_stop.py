@@ -1,11 +1,12 @@
 import Location
 
 
-class Public_transport_stop(Location):
+class PublicTransportStop:
 
-    def __init__(self, longitude, latitude, name, street):
+    def __init__(self, longitude, latitude, street, name):
+        self.location = Location(longitude, latitude)
         self.name = name
-        Location.__init__(self, longitude, latitude)
         self.street = street
+        self.number = number
 
 
